@@ -1,0 +1,72 @@
+html,
+* {
+  border-collapse: collapse;
+}
+
+div.root {
+  display: flex;
+  flex-direction: column;
+  margin: 16px;
+  position: relative;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+table {
+  margin-bottom: 16px;
+}
+
+td,
+th {
+  padding: 8px;
+}
+
+td {
+  border: 4px groove #999;
+  min-width: 20px;
+  text-align: center;
+}
+
+tr.days > td {
+  border: none;
+}
+
+th {
+  text-align: right;
+}
+
+td.exists {
+  background-color: #666;
+}
+
+div.monthCounts {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+div.monthCounts > div {
+  border: 1px solid #333;
+  flex-basis: 5%;
+  margin-bottom: 16px;
+  padding: 16px;
+}
+
+div.title {
+  text-align: center;
+  font-weight: 700;
+}
+
+div.count {
+  text-align: center;
+  font-size: 36px;
+}
